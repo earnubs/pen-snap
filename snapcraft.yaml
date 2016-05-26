@@ -1,0 +1,17 @@
+name: pen
+version: 1.0.0
+summary: pen is a Markdown previewer written in JavaScript, aiming to just work.
+description: >
+  Using pen is super simple, we don't need to install any special
+  editor or launch any GUI application. pen is just a tidy command-line
+  tool. You can use your favourite editor and browser. No manual refresh
+  is even needed.
+apps:
+  pen:
+    command: pen
+    plugs: [network-bind]
+parts:
+  pen:
+    plugin: nodejs
+    node-packages:
+      - pen.md
